@@ -10,5 +10,15 @@ namespace DevFreela.Api.Controllers
         public ProjectsController()
         {
         }
+
+        // api/projects?query=net core
+        [HttpGet]
+        public IActionResult Get(string query)
+        {
+            //var projects = _projectService.GetAll(query);
+
+            //return Ok(projects);
+            return Ok();
+        }
     }
 }
